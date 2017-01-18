@@ -1,0 +1,999 @@
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        a:active {
+            text-decoration: underline;
+        }
+        /* ===========================================================
+END OF RESET - from http://meyerweb.com/eric/tools/css/reset/
+============================================================*/
+        /* ===========================================================
+NEXA BOLD + LIGHT FONTS 
+============================================================
+
+* Web Fonts from fontspring.com
+*
+* All OpenType features and all extended glyphs have been removed.
+* Fully installable fonts can be purchased at http://www.fontspring.com
+*
+* The fonts included in this stylesheet are subject to the End User License you purchased
+* from Fontspring. The fonts are protected under domestic and international trademark and 
+* copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+* distributing this font software.
+*
+* (c) 2010-2016 Fontspring
+*
+*
+*
+*
+* The fonts included are copyrighted by the vendor listed below.
+*
+* Vendor:      Fontfabric
+* License URL: https://www.fontspring.com/licenses/fontfabric/webfont
+*
+*
+*/
+        
+        @font-face {
+            font-family: 'nexa_boldregular';
+            src: url('../fonts/Nexa_Free_Bold-webfont.eot');
+            src: url('../fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'), url(/fonts/'Nexa_Free_Bold-webfont.woff2') format('woff2'), url(/fonts/'Nexa_Free_Bold-webfont.woff') format('woff'), url(/fonts/'Nexa_Free_Bold-webfont.ttf') format('truetype'), url(/fonts/'Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'nexa_lightregular';
+            src: url('../fonts/Nexa_Free_Light-webfont.eot');
+            src: url('../fonts/Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'), url(/fonts/'Nexa_Free_Light-webfont.woff2') format('woff2'), url(/fonts/'Nexa_Free_Light-webfont.woff') format('woff'), url(/fonts/'Nexa_Free_Light-webfont.ttf') format('truetype'), url(/fonts/'Nexa_Free_Light-webfont.svg#nexa_lightregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* ===========================================================
+Overall
+============================================================*/
+        
+        body {
+            font-size: 1em;
+            font-family: nexaLight, "Arial";
+            line-height: 1.5em;
+            display: flex;
+            flex-direction: column;
+            background-color: #EFDBC9;
+            color: #666;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .buttonblauw,
+        .buttonroze {
+            background-color: #36368D;
+            color: white;
+            width: 7.4em;
+            height: 1.8em;
+            border-radius: 0.5em;
+        }
+        
+        button {
+            border: none;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+        
+        .buttonroze {
+            background-color: #EA356A;
+            box-shadow: 0em 0.2em 0em 0em #A52953;
+        }
+        
+        .buttonblauw {
+            box-shadow: 0em 0.2em 0em 0em #272763;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+        }
+        
+        strong {
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            ;
+        }
+        
+        .zichtbaar {
+            display: none;
+        }
+        /* ===========================================================
+Login Formulier
+============================================================*/
+        
+        body > section:first-of-type {
+            background-color: #EFDBC9;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            z-index: 11;
+            margin-top: -24.2em;
+            transition: all 1.5s;
+        }
+        
+        body > section:first-of-type > img {
+            width: 1.2em;
+            height: 1.2em;
+            position: relative;
+            right: -19.5em;
+            top: 1em;
+        }
+        
+        body > section.loginzichtbaar:first-of-type {
+            margin: 0;
+        }
+        
+        body > section:first-of-type > div {
+            background-color: white;
+            border-radius: 0.7em;
+            padding: 2em;
+            margin-top: 2em;
+        }
+        
+        body > section:first-of-type h1 {
+            font-size: 1rem;
+        }
+        
+        body > section:first-of-type div > h1 {
+            max-width: 10em;
+            font-size: 2rem;
+            margin-bottom: 0.5em;
+        }
+        
+        body > section:first-of-type div form input {
+            width: 18em;
+            border-radius: 0.5em;
+            height: 3em;
+            padding-left: 1em;
+        }
+        
+        body > section:first-of-type div form p:nth-of-type(1) input,
+        body > section:first-of-type div form p:nth-of-type(2) input {
+            margin-bottom: 1.4em;
+        }
+        
+        body > section:first-of-type div form p:nth-of-type(3) button {
+            width: 12.3em;
+            margin-top: 0.5em;
+            padding-top: 0.4em;
+            height: 2em;
+        }
+        
+        body > section:first-of-type div form p:nth-of-type(4) a {
+            display: inline-block;
+            margin-top: 1em;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            width: 13.5em;
+            text-align: center;
+            padding-top: 0.4em;
+        }
+        /* ===========================================================
+Navigatie
+============================================================*/
+        /*navigatie bovenaan */
+        
+        header nav.largenav {
+            display: none;
+        }
+        
+        .navigatiebar {
+            /* Omdat dit uniek is gebruik ik een class. Anders gaan alle headers
+in mijn pagina verkeerd gestijld worden. */
+            background-color: #2ed866;
+            height: 3.8em;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            color: white;
+        }
+        
+        .navigatiebar nav {
+            /* Nav heeft 100% width voor flex - div en ul worden vervolgens verplaatst met space-between*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 3.8em;
+        }
+        
+        .navigatiebar div {
+            /* logo en tekst bij elkaar aan linkerkant van navigatiebar*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 6em;
+        }
+        
+        .navigatiebar img {
+            /* Transavia Logo & profielfoto styling*/
+            width: 2.7em;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        
+        .navigatiebar div:nth-of-type(2) img {
+            padding-right: 1em;
+        }
+        
+        .navigatiebar nav > img {
+            margin-right: 0.5em;
+        }
+        
+        .navigatiebar div:first-of-type h1:first-of-type {
+            /* "Transavia Stories Text" Pas zichtbaar op grotere scherm groottes */
+            display: none;
+        }
+        
+        .navigatiebar h1 {
+            font-size: 1.2em;
+        }
+        /* TABBLAD navigatie onderaan */
+        
+        nav:nth-of-type(2) {
+            height: 4em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            color: white;
+            background-color: white;
+            display: flex;
+            width: 100%;
+            box-shadow: 0px -5px 24px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        nav:nth-of-type(2) ul {
+            display: flex;
+            width: 100%;
+        }
+        
+        nav:nth-of-type(2) ul li {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        nav:nth-of-type(2) ul li a {
+            margin-bottom: 0.2em;
+        }
+        
+        nav:nth-of-type(2) ul li.active {
+            background-color: #2ed866;
+            height: 4em;
+        }
+        
+        nav:nth-of-type(2) ul li:nth-of-type(1) {
+            /* Home inactief */
+            background-image: url(/images/home_green.svg);
+            color: #2ed866;
+        }
+        
+        nav:nth-of-type(2) ul li.active:nth-of-type(1) {
+            /* Home Actief */
+            background-image: url(/images/home_white.svg);
+            background-size: 2em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            color: white;
+        }
+        
+        nav:nth-of-type(2) ul li:nth-of-type(2) {
+            /* Lijst inactief */
+            background-image: url(/images/list_groen.svg);
+            background-size: 1.8em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            color: #2ed866;
+        }
+        
+        nav:nth-of-type(2) ul li.active:nth-of-type(2) {
+            /* Lijst Actief */
+            background-image: url(/images/list_white.svg);
+            background-size: 2em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+        }
+        
+        nav:nth-of-type(2) ul li:nth-of-type(3) {
+            /* History inactief */
+            background-image: url(/images/history_groen.svg);
+            background-size: 1.8em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            color: #2ed866;
+        }
+        
+        nav:nth-of-type(2) ul li.active:nth-of-type(3) {
+            /* History Actief */
+            background-image: url(/images/history_white.svg);
+            background-size: 2em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+        }
+        
+        nav:nth-of-type(2) ul li:nth-of-type(4) {
+            /* Downloads inactief */
+            background-image: url(/images/download_groen.svg);
+            background-size: 1.8em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            color: #2ed866;
+        }
+        
+        nav:nth-of-type(2) ul li.active:nth-of-type(4) {
+            /* Downloads Actief */
+            background-image: url(/images/download_white.svg);
+            ;
+            background-size: 2em;
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+        }
+        /*
+===========================================================
+GENRE SLIDER
+============================================================*/
+        
+        body > section:nth-of-type(3) {
+            margin-top: 3.8em;
+            background-color: #36368D;
+            color: white;
+        }
+        
+        body > section:nth-of-type(3) > ul {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-y: hidden;
+            height: 3em;
+            text-align: center;
+            align-items: center;
+        }
+        
+        body > section:nth-of-type(3) > ul > li {
+            min-width: 8em;
+        }
+        
+        body > section:nth-of-type(3) > ul > li {
+            min-width: 8em;
+        }
+        
+        body > section:nth-of-type(3) > ul > li {
+            min-width: 8em;
+        }
+        
+        body > section:nth-of-type(3) > ul > li:first-of-type {
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            background-color: #EA356A;
+            background-size: 20em;
+            border-radius: 1em;
+        }
+        /* ===========================================================
+Info Popup
+============================================================*/
+        
+        body > section:nth-of-type(2) {
+            margin-top: 2.6em;
+            background-color: #2ed866;
+            padding: 2em;
+            color: white;
+            margin-bottom: -3.8em;
+        }
+        
+        body > section:nth-of-type(2) img {
+            width: 1.3em;
+            position: relative;
+            bottom: 1.3em;
+            left: 90%;
+        }
+        
+        body > section:nth-of-type(2) h1 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: -0.2em;
+        }
+        
+        body > section:nth-of-type(2) p:first-of-type {
+            margin-bottom: 0.5em;
+        }
+        /* ===========================================================
+Banner
+============================================================*/
+        
+        main > section:first-of-type {
+            /* Door de > Pakt het alleen de eerste section direct gerelateerd aan main. Eerste uitgelichte verhaal met grote achtergrond */
+            height: 30em;
+            background-image: url(/images/GeertwildersVerhaal.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        section h1 {
+            font-family: nexaBold;
+            font-size: 2.8em;
+            color: #2ed866;
+        }
+        
+        main > section:nth-of-type(1) > section {
+            box-shadow: 0px 0px 53px -3px rgba(163, 163, 163, 1);
+        }
+        
+        footer img {
+            width: 1em;
+        }
+        /* ===========================================================
+Article Styling
+============================================================*/
+        /* BANNER STYLING */
+        
+        main section > section {
+            display: flex;
+            width: 22em;
+            background-color: rgba(255, 255, 255, 0.97);
+            border-radius: 0.7em;
+            flex-wrap: wrap;
+            height: 20.5em;
+            padding-top: 0.3em;
+        }
+        
+        main section > section header {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+            height: 6em;
+        }
+        
+        main section > section header footer {
+            display: flex;
+            text-align: center;
+            width: 12em;
+            justify-content: space-between;
+            font-family: nexaBold;
+            color: #666666;
+            font-size: 0.9em;
+            margin-left: 2em;
+            order: 3;
+        }
+        
+        main section > section header footer div {
+            display: flex;
+            height: 1em;
+            align-items: center;
+        }
+        
+        main section > section header footer img {
+            margin-right: 0.3em;
+            margin-top: -0.3em;
+        }
+        
+        main section > section h1 {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 0.2em;
+            order: 2
+        }
+        
+        main section > section h2 {
+            width: 100%;
+            order: 1;
+            font-size: 1em;
+            padding-left: 2em;
+            padding-top: 0.5em;
+            color: #EA356A;
+            font-family: nexaBold;
+        }
+        
+        main section > section article {
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            display: flex;
+            height: 10em;
+            flex-wrap: wrap;
+            margin-top: 0.5em;
+        }
+        
+        main section > section p,
+        main section > section article footer {
+            width: 100%;
+            align-self: center;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+        
+        main section > section p {
+            padding-top: 1em;
+            font-family: nexaBold;
+        }
+        
+        main section > section article footer {
+            margin-top: 0.5em;
+        }
+        
+        main section > section article img {
+            position: relative;
+            width: 2em;
+            height: 2em;
+        }
+        
+        main section > section article img:first-of-type {
+            top: 0.7em;
+            left: 1em;
+        }
+        
+        main section > section article img:nth-of-type(2) {
+            left: 18em;
+            bottom: 2.7em
+        }
+        
+        main section > section > footer {
+            margin: auto;
+            width: 18em;
+            height: 4em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5em;
+        }
+        /*=========*/
+        /* ARTIKELS SECTION STYLING */
+        
+        .artikelslider {
+            display: flex;
+            overflow-y: hidden;
+        }
+        
+        main section:nth-of-type(2) > h1 {
+            width: 100%;
+            height: 1em;
+        }
+        
+        .verhaalbox {
+            margin-left: 1em;
+            margin-top: 1em;
+            display: flex;
+            height: 30em;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 3em;
+            max-width: 18em;
+        }
+        
+        .verhaalbox > footer {
+            display: flex;
+            flex-wrap: wrap;
+            height: 15em;
+            width: 100%;
+            margin-top: -2em;
+        }
+        
+        .verhaalbox > footer > article {
+            height: 10em;
+            order: 2;
+        }
+        
+        .verhaalbox > footer > h1 {
+            width: 8em;
+            font-size: 2.1em;
+            align-self: flex-start;
+            margin-left: -1.3em;
+            margin-bottom: 0.5em;
+        }
+        
+        .verhaalbox > footer > footer {
+            width: 12em;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 2em;
+            order: 2;
+            margin-top: -1.11em;
+        }
+        
+        .verhaalbox > footer > footer > div {
+            display: flex;
+            height: 1em;
+            align-items: center;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+        }
+        
+        .verhaalbox > footer > footer > div > img {
+            margin-right: 0.3em;
+        }
+        
+        .verhaalbox article img:nth-of-type(2) {
+            position: relative;
+            left: 14em;
+        }
+        
+        .verhaalbox article > footer:nth-of-type(2) {
+            margin-top: -0.3em;
+            display: flex;
+            justify-content: space-between;
+            max-width: 14em;
+        }
+        
+        .verhaalbox article > footer > button {
+            width: 6em;
+        }
+        
+        .verhaalbox article > footer > button:nth-of-type(2) {
+            margin-left: 1em;
+        }
+        
+        .verhaalbox > header {
+            margin-top: -1em;
+            background-image: url(/images/StonedVerhaal.png);
+            background-size: cover;
+            background-position: 10%;
+            width: 100%;
+            height: 10em;
+            border-top-left-radius: 0.7em;
+            border-top-right-radius: 0.7em;
+        }
+        /*=========*/
+        /* LOSSE ARTIKELEN STYLING */
+        
+        section.verhaalbox:nth-of-type(3) footer > h1 {
+            margin-left: -0.4em;
+        }
+        
+        section.verhaalbox:nth-of-type(3) header {
+            background-image: url(/images/freudiaans.png);
+            background-size: 20em;
+            background-position: top;
+        }
+        
+        section.verhaalbox:nth-of-type(3) article footer:nth-of-type(2) button {
+            position: relative;
+            top: 1.4em;
+        }
+        
+        section.verhaalbox:nth-of-type(2) footer > h1 {
+            margin-left: 0.2em;
+        }
+        
+        section.verhaalbox:nth-of-type(2) header {
+            background-image: url(/images/GeertwildersVerhaal.png);
+            background-size: 20em;
+        }
+        /*    De tussenkoppen tussen de sections door */
+        
+        body > main > h1 {
+            font-size: 2em;
+            position: relative;
+            left: 4%;
+            width: 10em;
+            margin-bottom: 0.2em;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            color: #36368D;
+        }
+        
+        body > main > h1:first-of-type {
+            margin-top: 1em;
+        }
+        /* ========= +1 Lijst Animatie ====== */
+        
+        body > div {
+            position: fixed;
+            font-family: nexaBold, Arial;
+            font-weight: 800;
+            font-size: 3em;
+            z-index: 0;
+            bottom: 0rem;
+            left: 25%;
+            margin-left: 1rem;
+            background-color: #EA356A;
+            border-radius: 1em;
+            width: 1.2em;
+            height: 1.2em;
+            color: white;
+            transform: translateY(-2em);
+            opacity: 0;
+            transition: opacity 4s, transform 0.5s, ease-out;
+        }
+        
+        body > div > p {
+            position: relative;
+            top: 0.4em;
+            left: 0.1em;
+        }
+        
+        .addtolist {
+            transform: translateY(1em);
+            opacity: 1;
+        }
+        /* =======================================
+Media Queries 
+======================================= */
+        
+        @media (min-width: 30em) {
+            body > section:nth-of-type(2) {
+                display: flex;
+                justify-content: center;
+            }
+            section:nth-of-type(2) > div {
+                width: 25em;
+            }
+        }
+        
+        @media (min-width: 52em) {
+            body > div {
+                display: none;
+            }
+            .navigatiebar nav:nth-of-type(2) {
+                display: none;
+            }
+            header nav.largenav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+                height: 1em;
+                width: 100%;
+                position: relative;
+                top: -2.8em;
+            }
+            header nav.largenav ul {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                width: 30em;
+            }
+            header nav.largenav ul li {
+                font-size: 1.2em;
+            }
+            .addtolist1 {
+                transform: translateY(1em);
+                opacity: 1;
+            }
+            header nav.largenav ul li img {
+                width: 1.2em;
+                position: relative;
+                top: 0.2em;
+                left: -0.5em;
+            }
+        }
+        
+        @media (min-width: 65em) {
+            body {
+                background-color: white;
+            }
+            /* ====== GENRE SLIDER ====== */
+            body > section:nth-of-type(3) {
+                padding-top: 0.8em;
+                padding-bottom: 0.2em;
+            }
+            main > section:first-of-type {
+                margin: auto;
+                max-width: 100%;
+                height: 40em;
+                background-position: center;
+            }
+            main > section:first-of-type > section {
+                position: relative;
+                left: 10em;
+                font-size: 1.2em;
+            }
+            main > h1:first-of-type {
+                margin-bottom: -2.3em;
+            }
+            main > h1:nth-of-type(2) {
+                margin-bottom: -2.3em;
+            }
+            /* ====== ARTIKEL SLIDER ====== */
+            .artikelslider {
+                background-color: #EFDBC9;
+            }
+            section.artikelslider {
+                padding-top: 5em;
+            }
+            /* ====== ARTIKEL STYLING ====== */
+            body > main > section section.verhaalbox {
+                width: 21em;
+                max-width: 50em;
+                height: 35em;
+                margin-left: 2em;
+            }
+            body > main > section section.verhaalbox article > footer:nth-of-type(2) {
+                width: 18em;
+                max-width: 30em;
+            }
+            body > main > section section.verhaalbox article > footer:nth-of-type(2) button {
+                width: 10em;
+            }
+            body > main > section section.verhaalbox article > img:nth-of-type(2) {
+                width: 10em;
+                top: -3em;
+            }
+            body > main > section section.verhaalbox header {
+                height: 15em;
+            }
+            /* ====== INFO SCHERM ====== */
+            body > section:nth-of-type(2) {
+                margin-bottom: -23.7em;
+                width: 10em;
+                position: relative;
+                top: 9.8em;
+                left: 21%;
+                border-radius: 0.7em;
+                font-size: 1.2em;
+                height: 16.8em;
+                box-shadow: 0px 0px 53px -3px rgba(163, 163, 163, 1);
+            }
+            body > section:nth-of-type(2) p:first-of-type {
+                margin-top: 2em;
+                margin-bottom: 1em;
+            }
+            body > section:nth-of-type(2) img {
+                display: none;
+            }
+            body > section:nth-of-type(2) div h1 {
+                margin-top: 0.3em;
+                font-size: 2.5em;
+                margin-bottom: 0.7em;
+            }
+        }

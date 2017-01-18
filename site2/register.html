@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>99 Verhalen Registreren</title>
+    <link rel="stylesheet" href="/styles/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Bovenste groene navigatie-->
+    <header class="navigatiebar">
+        <nav>
+            <div>
+                <a href="/overzicht.html"><img src="/images/logo_transavia.png" alt="Logo Transavia"> </a>
+                <h1>99 Verhalen</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Registratie Form gedeeltelijk van https://tympanus.net/codrops/2012/03/27/login-and-registration-form-with-html5-and-css3/ -->
+        <h1>Welkom!</h1>
+        <p>Wat leuk dat je je wilt registreren!</p>
+        <form name=registratieform>
+
+            <div>
+                <p>
+                    <label for="usernamesignup">Gebruikersnaam</label>
+                    <input name="usernamesignup" required="required" type="text" placeholder="Bijv: marijuice123" />
+                </p>
+                <p>
+                    <label for="emailsignup"> E-mail adres</label>
+                    <input name="emailsignup" required="required" type="email" placeholder="Bijv: mysupermail@gmail.com" />
+                </p>
+                <p>
+                    <label for="passwordsignup">Wachtwoord</label>
+                    <input name="passwordsignup" required="required" type="password" placeholder="Bijv: Pannekoek!123" />
+                </p>
+                <p>
+                    <label for="passwordsignup_confirm">Wachtwoord herhalen</label>
+                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="Bijv: Pannekoek!123" />
+                </p>
+            </div>
+            <p>
+                <button type="submit" class="buttonblauw">Verder</button>
+            </p>
+            <p>
+                <a href="/overzicht.html">Annuleren</a>
+            </p>
+        </form>
+    </section>
+
+    <section>
+        <!-- Slider met info stappen nadat er op "Verder" is gedrukt -->
+        <h1>Interesses</h1>
+        <p>Kies een aantal onderwerpen die je interessant lijken</p>
+        <div>
+            <button>Bizar</button>
+            <button>Fantasie</button>
+            <button>Poëzie</button>
+            <button>Komisch</button>
+            <button>Duister</button>
+            <button>Familie</button>
+            <button>Zintuigen</button>
+            <button>Nieuws</button>
+            <button>Persoonlijk</button>
+            <button>Taal</button>
+            <button>Sport</button>
+            <button>Conversatie</button>
+        </div>
+        <p>
+            <button class="buttonroze">Vorige</button>
+            <button class="buttonblauw"><a href="/overzicht.html">Verder</a></button>
+        </p>
+        <p>
+            <a href="/overzicht.html">Annuleren</a>
+        </p>
+    </section>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>
